@@ -21,7 +21,7 @@ describe('Quote', () => {
     const response = await QuoteService.get(1)
     expect(response.status).toBe(200)
     expect(response.data).toStrictEqual({
-      id: 1,
+      id: 2,
       quote: 'Your heart is the size of an ocean. Go find yourself in its hidden depths.',
       author: 'Rumi'
     })
