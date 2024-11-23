@@ -38,3 +38,38 @@ export const getTotal = (items = [], discount = 0) => {
   const total = items.reduce((acc, { price, quantity }) => acc + price * quantity, 0)
   return total * (1 - discount / 100)
 }
+
+/**
+ * Подсчет суммы оценок 
+ *
+ * @param {string} obj
+ * @returns {number}
+ */
+
+export const getScore = (obj = {}) => {
+  /** 
+   * @param {array} arr
+   * Преобразует массив обьектов в массив оценок
+  */
+  let arr = Object.values(obj) 
+  /**
+   * @param {number} sum
+   * Сумма оценок
+   */
+  let sum = 0
+  /**
+   * Цикл для подсчета суммы оценок
+   */
+  for(let i = 0; i < arr.length; i++) {
+    sum = arr[i] + sum
+  }
+  return sum
+}
+
+const scores = {
+  Anna: 10,
+  Olga: 1,
+  Ivan: 5,
+}
+
+console.log(getScore(scores))
