@@ -9,6 +9,9 @@ export default [
   eslintPluginPrettierRecommended,
   // DOC: https://www.npmjs.com/package/eslint-plugin-jest
   {
+    ignores: ['reports/']
+  },
+  {
     files: ['test/**'],
     ...jest.configs['flat/recommended']
   }

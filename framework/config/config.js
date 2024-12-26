@@ -1,4 +1,4 @@
-require('dotenv').config();
+require('dotenv').config()
 
 export default Object.freeze({
   baseURL: process.env.TEST_BOOKSTORE_API_URL ?? `https://bookstore.demoqa.com`,
