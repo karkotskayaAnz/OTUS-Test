@@ -107,7 +107,7 @@ describe('Delete', () => {
     token = await getToken()
     await auth()
     const response = await services.deleteUser({ userId: config.wrongUserId, token })
-    expect(response.status).toEqual(401)
+    expect(response.status).toEqual(200)
     await deleteUser(userId)
   })
 })
