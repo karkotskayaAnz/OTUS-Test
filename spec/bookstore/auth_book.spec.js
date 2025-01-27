@@ -1,5 +1,5 @@
-import config from '../framework/config/config'
-import services from '../framework/services/services_auth_book'
+import config from '../../framework/config/config'
+import services from '../../framework/services/services_auth_book'
 
 let userId
 let token

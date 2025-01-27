@@ -1,7 +1,7 @@
-import config from '../framework/config/config'
-import services_auth_book from '../framework/services/services_auth_book'
-import services_books from '../framework/services/services_books'
-import books from '../framework/fixtures/books.json'
+import config from '../../framework/config/config'
+import services_auth_book from '../../framework/services/services_auth_book'
+import services_books from '../../framework/services/services_books'
+import books from '../../framework/fixtures/books.json'
 
 let userId
 let token
